@@ -1,4 +1,4 @@
-# mRNA Subcellular Localization Predictor
+# Unified mRNA Subcellular Localization Predictor
 UMSLP: Unified mRNA Subcellular Localization Predictor based on Machine Learning Techniques
 
 
