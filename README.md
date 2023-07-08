@@ -13,7 +13,6 @@ Contains 2 floders:
 ## Code Folder:
  
 ## Docker Guideline:
-** PREBUILT Docker image
 
 Use the PREBUILT Docker image available on the public Docker Hub Account**
 
@@ -23,7 +22,7 @@ FROM USER SIDE (User Computer):
 
 2. RUN the following command: Open a terminal session (Windows - command line or cmd, on MacBook it is terminal, on Ubuntu it is console app)
 	- Type in the following command:
-		docker run -p 7000:8000 smusleh/localization:mslp
+		docker run -p 7000:8000 smusleh/localization:umslp
 	- Open the local browser and type in the address bar the following link:
 	  http://127.0.0.1:7000/docs or http://localhost:7000/docs  
 
