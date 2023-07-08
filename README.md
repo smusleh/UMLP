@@ -1,43 +1,21 @@
 # mRNA Subcellular Localization Predictor
-UMSLP: mRNA subcellular localization predictor based on machine learning techniques is a machine learning-based tool to predict the subcellular localization of mRNA. The mauscript is published in BMC Bioinformatics.
+UMSLP: Unified mRNA Subcellular Localization Predictor based on Machine Learning Techniques
 
 
 ## Data folder
-Contains 4 floders:
-* IDS_I: Independent Dataset I : 
-         First test datasets used for testing only. These include Nine sublocalizations.
-* IDS_II: ndependent Dataset II: 
-         Second test data set used for testing only. These include Nine sublocalizations.
+Contains 2 floders:
+
 * TEST_01: Testset_01: 
          Independent dataset files used for testing only.
 * Train: Training Dataset: 
          Contains all five Fasta Sequence Files used to train MSLP models. The fifth one is a combination of all Fastafiles.
 
 ## Code Folder:
-* Shap analysis Jupyter Notebook
-* Feature generation 
-* Ablation study code
-
-
-The folder contains python code to generate MSLP Application Programming Interface (API) using.
-FastAPI (a Web framework for developing RESTful APIs in Python). It is based on Pydantic and 
-type hints to validate, serialize, and deserialize data, and automatically auto-generate OpenAPI documents.
-
-
- ## Docker Folder:
- * fasta folder contains sample fasta file
- * input folder contains uploaded fasta files
- * models folder contains MSLP-trained binary classifiers based on OvR strategy.
-                One model for each of the five localizations
- * output folder: temp folder
- * util folder contains code and classes to generate the four types of features (Kmer, PseKNC, PSEEIIP, 
-              TPCP, DPCP, Z_curve_48bit, and Z_curve_144bit.
- docker-compose.yaml, Dockerfie: Specs to build the MSLP container
- requirements.txt: All required packages to build the API within the container 
- localization_api.py: python file contains code and logic to build the API endpoints
  
 ## Docker Guideline:
-**OPTION 1: Use the PREBUILT Docker image available on the public Docker Hub Account**
+** PREBUILT Docker image
+
+Use the PREBUILT Docker image available on the public Docker Hub Account**
 
 FROM USER SIDE (User Computer):
 1. Install Docker Desktop (Windows, Linux, or MacBook iOS)
@@ -49,14 +27,7 @@ FROM USER SIDE (User Computer):
 	- Open the local browser and type in the address bar the following link:
 	  http://127.0.0.1:7000/docs or http://localhost:7000/docs  
 
-**OPTION 2: Build and run the Docker Container locally and run.**
-
-FROM USER SIDE (User Computer):
-1. Clone this directory to local folder in your system
-2. Switch to the App folder, then run the following command:
-	Docker compose up --build
-
-Once the container is up and running (OPTION 1 or OPTION 2):
+Once the container is up and running:
 
 1. Open the local browser and type in the address bar the following link:
 	http://127.0.0.1:7000/docs or http://localhost:7000/docs 
