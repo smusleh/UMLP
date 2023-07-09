@@ -2,13 +2,14 @@
 UMSLP: Unified mRNA Subcellular Localization Predictor based on Machine Learning Techniques
 
 
-## Data folder
-Contains 2 floders:
+## fasta folder
+Contains 3 floders:
 
 * TEST_01: Testset_01: 
          Independent dataset files used for testing only.
 * Train: Training Dataset: 
          Contains all five Fasta Sequence Files used to train MSLP models. The fifth one is a combination of all Fastafiles.
+* UI_Test: User Interface test file contains five sequences from each localization
 
 ## Code Folder:
  
