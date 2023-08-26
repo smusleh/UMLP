@@ -2,7 +2,7 @@
 UMSLP: Unified mRNA Subcellular Localization Predictor based on Machine Learning Techniques
 
 
-## fasta folder
+## Data folder
 Contains 3 floders:
 
 * TEST_01: Testset_01: 
@@ -13,7 +13,7 @@ Contains 3 floders:
 
 ## Code Folder:
  
-## Docker Guideline:
+## Docker Folder:
 
 Use the PREBUILT Docker image available on the public Docker Hub Account**
 
